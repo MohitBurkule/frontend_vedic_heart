@@ -31,6 +31,18 @@
         </div>
     </nav>
     <main class="page service-page">
+        <div class="modal fade" role="dialog" tabindex="-1" id="no_camera">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Camera Permission Required&nbsp;</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <p>Camera permission is required for detecting heart rate <br> <a href="https://support.google.com/chrome/answer/2693767?co=GENIE.Platform%3DAndroid&amp;hl=en-GB">If you have disabled camera permissions then please go to your browsers site settings and enable them [Click here to know how ]</a>&nbsp;</p>
+                    </div>
+                    <div class="modal-footer" style="height:100%;"><button class="btn btn-light" type="button" data-dismiss="modal" style="margin-top:0px;">Close</button></div>
+                </div>
+            </div>
+        </div>
         <section class="clean-block clean-services dark">
             <div class="container">
                 <div class="block-heading">
@@ -52,18 +64,6 @@
                 <div class="card flash fade-in" id="recorder_card">
                     <div class="card-body">
                         <h4 class="card-title">Recording Readings</h4>
-                        <div class="modal fade" role="dialog" tabindex="-1">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Modal Title</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                                    <div class="modal-body">
-                                        <p>The content of your modal.</p>
-                                    </div>
-                                    <div class="modal-footer" style="width:50%;"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
-                                </div>
-                            </div>
-                        </div>
                         <h6 class="text-muted card-subtitle mb-2">Heart beat Graph</h6><video width="10" height="10" controls="" id="v" muted=""></video><canvas id="g" width="200%" height="30" ></canvas><canvas id="c" width="100" height="100" style="display:none" ></canvas>
                         <p class="card-text" id="bpm">BPM</p>
                         <p class="card-text" id="time_left">Time Left</p>

@@ -80,8 +80,9 @@ function submitData()
     document.getElementById("ml_bar_image").src="data:image/png;base64,"+d['ml_bar'];
     document.getElementById("power_pie_image").src="data:image/png;base64,"+d['pie'];
     $('#results_card').attr("hidden",false);
-    document.getElementById("breathing_text").innerHTML='One breathing cycle is completed in about'+d['breathingrate']+'seconds.';
-    document.getElementById("sampling_text").innerHTML='Average sampling rate of your device is'+d['sampling_rate'];    
+    $('#recorder_card').attr("hidden",true);
+    document.getElementById("breathing_text").innerHTML='One breathing cycle is completed in about '+d['breathingrate']+'seconds.';
+    document.getElementById("sampling_text").innerHTML='Average sampling rate of your device is '+d['sampling_rate'];    
     }
     else{
            alert('There was error taking measurements - PLease record in a stable environment');             

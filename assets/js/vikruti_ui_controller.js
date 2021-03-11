@@ -73,15 +73,22 @@ function submitData()
                 type: "post",
                 data: formData,
                 success: function(d) {
-                    alert(d);
                     d = JSON.parse(d);
+                        
                     console.log(d);
-                    document.getElementById("ml_bar_image").src="data:image/png;base64,"+d['ml_bar']
-                    $('#results_card').show();
-                    
+    if(d['status']==1){
+    document.getElementById("ml_bar_image").src="data:image/png;base64,"+d['ml_bar'];
+    document.getElementById("power_pie_image").src="data:image/png;base64,"+d['pie'];
+    $('#results_card').show();
+    document.getElementById("breathing_text").innerHTML='One breathing cycle is completed in about'+d['breathingrate']+'seconds.';
+    document.getElementById("sampling_text").innerHTML='Average sampling rate of your device is'+d['sampling_rate'];    
+    }
+    else{
+           alert('There was error taking measurements - PLease record in a stable environment');             
+    }
                 },
                 error: function() {
-                    alert("some error ");
+                    alert("Couldn't connect to server");
                 }
             });
         

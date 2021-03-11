@@ -3,6 +3,33 @@ document.getElementById("instructions_done").addEventListener("click", hide_inst
 document.getElementById("start_btn").addEventListener("click", startReading);
 
 
+$(function(){
+        $("#mainform").on("submit", function(event) {
+            event.preventDefault();
+
+            var formData = {
+                'hdata': $('input[name=hdata]').val() //for get hdata 
+            };
+            console.log(formData);
+
+            $.ajax({
+                url: "https://vedicheart.pythonanywhere.com/ml/api",
+                type: "post",
+                data: formData,
+                success: function(d) {
+                    alert(d);
+                    d = JSON.parse(d);
+                    console.log(d);
+                    document.getElementById("ml_bar_image").src="data:image/png;base64,"+d['ml_bar']
+                    $('#results_card').show();
+                    
+                },
+                error: function() {
+                    alert("some error ");
+                }
+            });
+        });
+    }) 
 
 function hide_instructions(){
     $("#instruction_done").fadeOut("slow");

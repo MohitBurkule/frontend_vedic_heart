@@ -46,7 +46,7 @@ function show_recorder(){
 }
 
 var start_timer=null;
-var maxtimer=2*60000	
+var maxtimer=0.5*60000	
 var video, width,stopped, height, context, graphCanvas, graphContext, bpm,track,torchMaxRetry;
 var torchMaxRetry=5;
 var hist = [];// older way of storing data [{bright:64,time:200},{bright:68,time:202},...] 

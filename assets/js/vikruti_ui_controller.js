@@ -76,7 +76,7 @@ function submitData()
                     d = JSON.parse(d);
                         
                     console.log(d);
-    if(d['status']==1){
+    if(d['status']=='1'){
     document.getElementById("ml_bar_image").src="data:image/png;base64,"+d['ml_bar'];
     document.getElementById("power_pie_image").src="data:image/png;base64,"+d['pie'];
     $('#results_card').show();

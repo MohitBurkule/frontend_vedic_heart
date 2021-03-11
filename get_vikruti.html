@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Vedic Heart</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/vikruti_ui_look.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="/*border-radius:20px;*/">
+        <div class="container"><a class="navbar-brand logo" href="#">Vedic Heart</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="service-page.html">Vikruti</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page service-page">
+        <section class="clean-block clean-services dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Know Your Vikruti</h2>
+                    <p></p>
+                    <div class="card flash fade-in" id="instruction_card">
+                        <div class="card-body">
+                            <h4 class="card-title">INSTRUCTIONS</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Please follow the below instructions to get correct reading&nbsp;</h6>
+                            <ul class="list-unstyled">
+                                <li>Place&nbsp;tip of &nbsp;your index finger on your phones back camera<br></li>
+                                <li>Allow camera permission when asked so that we can record your pulse through finger</li>
+                                <li>Calm Yourself Down - <strong><em>Do not Move!</em></strong></li>
+                                <li>Flashlight will be turned on to record a better signal&nbsp;</li>
+                                <li>It can get hot please <strong><em>Do not burn</em></strong><em>&nbsp;</em>yourself!!<br></li>
+                            </ul><button class="btn btn-primary" type="button" id="instructions_done" style="margin-top:0px;color:rgb(252,252,252);">Next</button></div>
+                    </div>
+                </div>
+                <div class="card flash fade-in" id="recorder_card">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <h6 class="text-muted card-subtitle mb-2">Subtitle</h6><video width="10" height="10" controls="" id="v" muted=""></video><canvas id="g" width="320" height="30" ></canvas><canvas id="c" width="100" height="100" style="display:none" ></canvas>
+                        <p class="card-text" id="bpm">BPM</p>
+                        <p class="card-text" id="time_left">Time Left</p>
+                        <p class="card-text" id="avg_bright">Avg Bightness</p>
+                        <form action="https://vedicheart.pythonanywhere.com/ml/" method="post" id="mainform"><input class="form-control" type="text" id="hdata" name="hdata" value="None"><button class="btn btn-primary" type="button" id="start_btn" style="margin-top:10px;color:rgb(249,249,249);" value="Start">Start</button></form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="clean-block add-on social-icons" style="height:20%;padding:0;">
+            <div class="icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright Text</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/vikruti_ui_controller.js"></script>
+</body>
+
+</html>

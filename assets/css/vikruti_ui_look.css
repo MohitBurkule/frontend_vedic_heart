@@ -1,0 +1,4 @@
+.show-slow {
+  transition:height: 2000ms ease-in-out, opacity 2500ms ease-in-out;
+}
+

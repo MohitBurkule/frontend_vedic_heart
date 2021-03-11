@@ -1,0 +1,13 @@
+.btn:not(:disabled):not(.disabled) {
+  color:#eabc19;
+  margin-top:80%;
+}
+
+.navbar.navbar-light.navbar-expand-lg.fixed-top.bg-white.clean-navbar {
+  border-radius:20px;
+}
+
+.clean-block.clean-services .card {
+  border-radius:20px;
+}
+

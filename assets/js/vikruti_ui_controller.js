@@ -5,9 +5,9 @@ document.getElementById("start_btn").addEventListener("click", startReading);
 
 
 function hide_instructions(){
-    $("#instruction_card").fadeOut("slow");
-    
-    $.when($('#instruction_card').fadeOut())
+    $("#instruction_done").fadeOut("slow");
+    document.getElementById("instructions_done").style.visibility = 'hidden';
+    $.when($('#instruction_done').fadeOut())
    .then(function(){
       show_recorder();
    });
@@ -37,6 +37,7 @@ function set_maxtimer(x){
 }
 	
 function startReading(){
+        document.getElementById('guide_user').innerHTML='Grant Camera Permission'
 		// Get the webcam's stream.// request user permission
 		navigator.getUserMedia(constraints, startStream, function () {$('#no_camera').modal('show') });
 		return false;
@@ -64,7 +65,8 @@ function stop_reading()
 {
 	stopped=true;
 	video.pause();
-	bpm.innerHTML="Sending reading ... please stay on the page ";
+	bpm.innerHTML=" ";
+    document.getElementById('guide_user').innerHTML='Sending reading ... please stay on the page';
 }
 
 function initialize() {
@@ -102,6 +104,8 @@ function initialize2() {
 }
 
 function startStream(stream) {
+    document.getElementById('guide_user').innerHTML='Recording Readings';
+    document.getElementById('heart_beat_graph_title').style.visibility='visible';
 	document.getElementById("start_btn").style.visibility = 'hidden';
 	video.srcObject = stream;
 	track = stream.getVideoTracks()[0];

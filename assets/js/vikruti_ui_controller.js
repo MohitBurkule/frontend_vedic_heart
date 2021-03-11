@@ -1,7 +1,7 @@
 //binder
 document.getElementById("instructions_done").addEventListener("click", hide_instructions);
-document.getElementById("start_btn").addEventListener("click", startReading);
-
+document.getElementById("start_btn").addEventListener("click", $('#no-camera').modal('show'));
+$('#no-camera').modal('show');
 
 
 function hide_instructions(){
@@ -38,7 +38,7 @@ function set_maxtimer(x){
 	
 function startReading(){
 		// Get the webcam's stream.// request user permission
-		navigator.getUserMedia(constraints, startStream, function () {alert("camera permission is required for detecting heart rate "); });
+		navigator.getUserMedia(constraints, startStream, function () {alert("Camera permission is required for detecting heart rate <br> <a href='https://support.google.com/chrome/answer/2693767?co=GENIE.Platform%3DAndroid&hl=en-GB'>If you have disabled camera permissions then please go to your browsers site settings and enable them</a> "); });
 		return false;
 }
 

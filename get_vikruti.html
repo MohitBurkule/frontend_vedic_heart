@@ -52,6 +52,18 @@
                 <div class="card flash fade-in" id="recorder_card">
                     <div class="card-body">
                         <h4 class="card-title">Recording Readings</h4>
+                        <div class="modal fade" role="dialog" tabindex="-1">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                    <div class="modal-body">
+                                        <p>The content of your modal.</p>
+                                    </div>
+                                    <div class="modal-footer" style="width:50%;"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                                </div>
+                            </div>
+                        </div>
                         <h6 class="text-muted card-subtitle mb-2">Heart beat Graph</h6><video width="10" height="10" controls="" id="v" muted=""></video><canvas id="g" width="200%" height="30" ></canvas><canvas id="c" width="100" height="100" style="display:none" ></canvas>
                         <p class="card-text" id="bpm">BPM</p>
                         <p class="card-text" id="time_left">Time Left</p>

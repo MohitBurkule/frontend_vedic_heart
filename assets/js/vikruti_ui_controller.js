@@ -2,11 +2,8 @@
 document.getElementById("instructions_done").addEventListener("click", hide_instructions);
 document.getElementById("start_btn").addEventListener("click", startReading);
 
-        
-        
-        
-        
-
+               
+//controllers
 function hide_instructions(){
     $("#instruction_done").fadeOut("slow");
     document.getElementById("instructions_done").style.visibility = 'hidden';
@@ -21,6 +18,8 @@ function show_recorder(){
     $('html, body').animate({scrollTop: '0px'}, 300);
 }
 
+////recording code
+var localstream;
 var start_timer=null;
 var maxtimer=0.5*60000	
 var video, width,stopped, height, context, graphCanvas, graphContext, bpm,track,torchMaxRetry;
@@ -99,6 +98,8 @@ function stop_reading()
 {
 	stopped=true;
 	video.pause();
+    video.src = "";
+    localstream.getTracks()[0].stop();
 	bpm.innerHTML=" ";
     document.getElementById('guide_user').innerHTML='Sending reading ... please stay on the page';
 }
@@ -142,6 +143,7 @@ function startStream(stream) {
     document.getElementById('heart_beat_graph_title').style.visibility='visible';
 	document.getElementById("start_btn").style.visibility = 'hidden';
 	video.srcObject = stream;
+    localstream=stream;
 	track = stream.getVideoTracks()[0];
 	video.play();
 	

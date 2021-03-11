@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
@@ -49,9 +48,16 @@
                     <h2 class="text-info">Know Your Vikruti</h2>
                     <p></p>
                 </div>
-                <div class="card flash fade-in" id="recorder_card">
+                <div class="card flash fade-in" id="instruction_card">
+                    <div class="card-body" hidden="">
+                        <h4 class="card-title">Results</h4>
+                        <h6 class="text-muted card-subtitle mb-2">Dominant vikruti</h6><img>
+                        <h6 class="text-muted card-subtitle mb-2">Power Graph</h6>
+                    </div>
+                </div>
+                <div class="card flash fade-in" id="recorder_card" hidden="">
                     <div class="card-body">
-                        <h4 class="card-title">Click on Start Recording</h4>
+                        <h4 class="card-title" id="guide_user">Click on Start Recording</h4>
                         <h6 class="text-muted card-subtitle mb-2" id="heart_beat_graph_title" style="visibility:hidden">Heart beat Graph</h6><video width="10" height="10" controls="" id="v" muted=""></video><canvas id="g" width="200%" height="30" ></canvas><canvas id="c" width="100" height="100" style="display:none" ></canvas>
                         <p class="card-text" id="bpm"></p>
                         <p class="card-text" id="time_left"></p>
@@ -87,7 +93,6 @@
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="assets/js/home_ui_controlle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="assets/js/vikruti_ui_controller.js"></script>
 </body>
 

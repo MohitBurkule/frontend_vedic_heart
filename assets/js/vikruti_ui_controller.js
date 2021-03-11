@@ -15,6 +15,7 @@ function hide_instructions(){
 function show_recorder(){
     $("#recorder_card").removeAttr('hidden'); 
     $("#recorder_card").fadeIn("slow");
+    $('html, body').animate({scrollTop: '0px'}, 300);
 }
 
 var start_timer=null;

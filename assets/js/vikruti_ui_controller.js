@@ -21,7 +21,7 @@ function show_recorder(){
 ////recording code
 var localstream;
 var start_timer=null;
-var maxtimer=0.5*60000	
+var maxtimer=2*60000	
 var video, width,stopped, height, context, graphCanvas, graphContext, bpm,track,torchMaxRetry;
 var torchMaxRetry=5;
 var hist = [];// older way of storing data [{bright:64,time:200},{bright:68,time:202},...] 
@@ -62,6 +62,7 @@ function submitData()
 	stop_reading();
 	document.getElementById("hdata").value=JSON.stringify(heartData);
 	//document.getElementById("mainform").submit();
+    //////ajax code ///////
     var formData = {
                 'hdata': $('input[name=hdata]').val() //for get hdata 
             };
@@ -81,7 +82,9 @@ function submitData()
     $('#results_card').attr("hidden",false);
     $('#recorder_card').attr("hidden",true);
     document.getElementById("breathing_text").innerHTML='One breathing cycle is completed in about '+d['breathingrate']+'seconds.';
-    document.getElementById("sampling_text").innerHTML='Average sampling rate of your device is '+d['sampling_rate'];    
+    document.getElementById("sampling_text").innerHTML='Average sampling rate of your device is '+d['sampling_rate'];  
+    document.getElementById("hr_text").innerHTML='Your HEart Rate is  '+d['sampling_rate'] +" Beats per Minute";  
+        
     }
     else{
            alert('There was error taking measurements - PLease record in a stable environment');             

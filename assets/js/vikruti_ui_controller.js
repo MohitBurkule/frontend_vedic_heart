@@ -21,7 +21,7 @@ function show_recorder(){
 ////recording code
 var localstream;
 var start_timer=null;
-var maxtimer=2*60000	
+var maxtimer=2*60000;
 var video, width,stopped, height, context, graphCanvas, graphContext, bpm,track,torchMaxRetry;
 var torchMaxRetry=5;
 var hist = [];// older way of storing data [{bright:64,time:200},{bright:68,time:202},...] 
@@ -36,13 +36,13 @@ navigator.getUserMedia = ( navigator.getUserMedia ||
 var constraints = { audio:false, video: { facingMode:"environment"} };
 
 function set_maxtimer(x){
-		maxtimer=x*60000// in milliseconds 
+		maxtimer=x*60000;// in milliseconds 
 }
 	
 function startReading(){
-        document.getElementById('guide_user').innerHTML='Grant Camera Permission'
-		// Get the webcam's stream.// request user permission
-		navigator.getUserMedia(constraints, startStream, function () {$('#no_camera').modal('show') });
+        document.getElementById('guide_user').innerHTML='Grant Camera Permission';
+		// Get the webcam's stream.// request user permission;
+		navigator.getUserMedia(constraints, startStream, function () {$('#no_camera').modal('show'); });
 		return false;
 }
 
@@ -151,7 +151,7 @@ function startStream(stream) {
 	video.play();
 	
 	setTimeout(function(){ 
-            track.applyConstraints({advanced: [{torch: true}]})
+            track.applyConstraints({advanced: [{torch: true}]});
         //alert('Turning on flashlight , if present ');
     	}, 800); 
     
@@ -189,7 +189,7 @@ function store_and_draw(data) {
     var len = data.length;
     var sum = 0;
 	if(stopped)//if stoppped then do not compute 
-		return 
+		return; 
 		
     for (var i = 0, j = 0; j < len; i++, j += 4) {
       sum += data[j] + data[j+1] + data[j+2]; // rgba 
@@ -205,10 +205,10 @@ function store_and_draw(data) {
 	{
 		// if timeout then submit data
 		submitData();
-		return 
+		return; 
 	}
 	// else display time left 
-	document.getElementById("time_left").innerHTML="Time left "+((maxtimer-(Date.now()-start_timer))/60000).toFixed(2)+' Minutes'
+	document.getElementById("time_left").innerHTML="Time left "+((maxtimer-(Date.now()-start_timer))/60000).toFixed(2)+' Minutes';
 	
 	//detect impulse 
 	try{

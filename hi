@@ -1,0 +1,125 @@
+[33mcommit c3c9bfb5572751356a9901c893bc89eca555fb59[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Fri May 28 18:54:26 2021 +0530
+
+    check if working
+
+[33mcommit e5851e76cf7877bbc27184afbfb8f027681edcf4[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Fri Mar 12 09:19:23 2021 +0530
+
+    changed timing and copywight
+
+[33mcommit f8ca33cd8a554f0005eae8f0fff0643d67fc62e5[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 22:14:00 2021 +0530
+
+    stop video and flash after use
+
+[33mcommit b8c9e63d8e1747a692e849a4fd8a575e450a187c[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 20:50:16 2021 +0530
+
+    improved results ui
+
+[33mcommit 59fe73a5a66cf8828b8d393cee3e8b438e239741[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 20:45:52 2021 +0530
+
+    ajax results displayed corrected
+
+[33mcommit 809a3fb7990fa96d94d3de709a10f8e2c35af8cb[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 20:37:44 2021 +0530
+
+    json response fix
+
+[33mcommit 33715dbdca633f388cfc1fd708071dda8b3645da[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 20:32:44 2021 +0530
+
+    ajax results displayed
+
+[33mcommit 46430a56431dece18cb6095c0ad888d1350bf3ca[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 20:07:06 2021 +0530
+
+    debug ajax
+
+[33mcommit 9d91a06c3690a13ee4f6a4b6b04f34fe6198fe17[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 20:03:43 2021 +0530
+
+    reduced time for testing
+
+[33mcommit 96fc482fd7263480a5d4389c757d28c693675361[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 19:58:54 2021 +0530
+
+    added ajax
+
+[33mcommit 776f5c692a7d9ad84e85af0714c7160b33829218[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 19:00:14 2021 +0530
+
+    scroll to top
+
+[33mcommit dff9d7738cafe901fe400985bea45d8f8c10fe0d[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 18:13:35 2021 +0530
+
+    added guide
+
+[33mcommit 2baa118db4583fc3bdfb23b7791fd1c172ba95e5[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 17:58:17 2021 +0530
+
+    added user guiding 4 levels
+
+[33mcommit bf396e9111336ac27ad05b4b23c4d7ae0f9f48f9[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 13:26:20 2021 +0530
+
+    camera permisson denied modal added
+
+[33mcommit 2daa60334ae5d2777f62201eedd9aa2a70b564d6[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 12:48:34 2021 +0530
+
+    test modal
+
+[33mcommit db3b93e3c667c36738250aa7d9e45a852182c3f7[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 12:35:22 2021 +0530
+
+    corrected recorder graph
+
+[33mcommit cb9f29a3e32bd07d680047da574383115946410c[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 12:32:56 2021 +0530
+
+    corrected recorder graph
+
+[33mcommit 6fc759575b5b18a446d44bf5b028592c5e0c0f48[m
+Author: mohitburkule5@gmail.com <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 12:22:56 2021 +0530
+
+    added home ui controller
+
+[33mcommit e40f832ddb2b6f9173277d7111b2df892ffa3f8f[m
+Author: mohit <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 12:08:36 2021 +0530
+
+    made changes
+
+[33mcommit 7a6a342ee2b42890d636f9c59fafaf44ab6419cd[m
+Author: mohit <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 12:05:06 2021 +0530
+
+    made changes
+
+[33mcommit 34a59b9c9e81261f655c0e384115a4037b1f34c2[m
+Author: mohit <bitbucketfecommon@mylocus.in>
+Date:   Thu Mar 11 10:19:13 2021 +0530
+
+    Initial import
